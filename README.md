@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.intersport.fr/blancetvert-chaussures_de_running_homme_pegasus_plus2-nike-p-IM2541~VZE/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -219,7 +219,7 @@ response = requests.get(
     params={
         "query": "nike",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
